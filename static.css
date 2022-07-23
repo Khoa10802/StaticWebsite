@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Inter&family=Kaisei+Opti:wght@700&family=Pacifico&family=Playfair+Display:wght@500&family=Roboto:wght@500&display=swap');
+html {
+    background-color: rgb(22, 22, 22);
+}
+
+a, p, img[alt], div.store_name, label, h1 {
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+
+    div.books {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .store_name {
+        display: none;
+    }
+    .header_navi {
+        display: flex;
+        flex-direction: column;
+    }
+    .book_preview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .small_pics {
+        display: flex;
+        justify-content: center;
+    }
+    .small_pics img {
+        margin-right: 10px;
+    }
+    .purchase_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .book_preview > div {
+    margin: 0 15px;
+    }
+    .purpose, .name, .email, .phone, .buttons, .note {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .newsletter, .method {
+        display: flex;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    div.books {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .store_name {
+        font-family: 'Pacifico', cursive;
+        font-size: 50px;
+        color: bisque;
+        font-style: italic;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .header_navi {
+        display: flex;
+    }
+    .book_preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small_pics {
+        display: flex;
+        flex-direction: column;
+    }
+    .small_pics img {
+        margin-bottom: 50px;
+        margin-right: 150px;
+    }
+    .purchase_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .book_preview > div {
+        margin: 15px 15px;
+    }
+    .purpose, .name, .email, .phone, .method, .newsletter, .note, .buttons {
+        display: flex;
+        margin-left: 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:hotpink;
+}
+
+div.home_category {
+    margin: 20px 0;
+    border-style: ridge;
+    border-color: grey;
+    border-radius: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Domine', serif;
+}
+
+.book_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold
+}
+
+div.books > div {
+    margin: 10px 70px;
+    border-style: ridge;
+    border-color: grey;
+    border-radius: 16px;
+}
+
+div.book_pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+div.book_title {
+    max-width: 300px;
+    text-align: center;
+}
+
+div.more_category {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Domine', serif;
+    font-size: 20px;
+}
+
+header, footer {
+    background-color: blue;
+    border-radius: 16px;
+    margin: 0;
+}
+
+.header_container {
+    display: flex;
+    height: 150px;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.logo {
+    margin-top: 4px;
+}
+
+div.navi {
+    margin: 0 10px;
+    align-self: flex-end;
+}
+
+.header_navi a {
+    margin: 0 5px;
+    border-style: ridge;
+    border-color: grey;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 20px;
+}
+
+.footer_container {
+    text-align: center;
+}
+
+.footer_container a {
+    font-size: x-large;
+}
+
+.footer_navi > a::after {
+    content: " | ";
+}
+
+.footer_navi > a:last-child::after {
+    content: none;
+}
+
+img.logo {
+    width: 150px;
+    width: 150px;
+    border-radius: 16px;
+}
+
+.breadcrumb_bar {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.breadcrumb > a::after {
+    content: " > ";
+}
+
+.breadcrumb > a:last-child::after {
+    content: none;
+}
+
+.breadcrumb a:last-child:hover {
+    color: white;
+}
+
+.breadcrumb a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.big_pic img {
+    width: 400px;
+    height: 400px;
+}
+
+.small_pics img {
+    width: 100px;
+    height: 100px;
+}
+
+.small_pics img:last-child {
+    margin-bottom: 0;
+}
+
+.book_description {
+    margin-top: 35px;
+}
+
+.purchase_button {
+    height: 100px;
+    border-radius: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+}
+
+.purchase_button:hover {
+    background-color: aqua;
+}
+
+.book_name {
+    font-family: 'Domine', serif;
+    color: white;
+    font-size: 40px;
+    font-style: italic
+}
+
+#description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#price {
+    font-family: 'Kaisei Opti', serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.contact_form {
+    border-style: ridge;
+    border-color: grey;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.outer_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.purpose section, .name input, .email input, .phone input {
+    border-radius: 8px;
+}
+
+.buttons input {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.buttons input:hover {
+    background-color: aqua;
+}
+
+.note textarea {
+    border-radius: 10px;
+}
+
+
+
+

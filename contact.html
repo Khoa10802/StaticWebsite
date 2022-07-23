@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Box Model</title>
+        <link rel="stylesheet" href="static.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="header_container"> 
+                <div class="logo">
+                    <img class="logo" src="logo.png" alt="Bookstore's logo">
+                </div>
+                <div class="store_name"> <h2> Khoa's Bookstore </h2> </div>
+                <div class="navi">
+                    <nav class="header_navi">
+                        <a href="index.html"> Home </a>
+                        <a href="category.html"> Fiction </a>
+                        <a href="category.html"> Textbook </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="contact_detail">
+            <h1> Contact Us </h1>
+
+            <form class="contact_form" onsubmit="return false" method="get" action="contact.html">
+                <div class="outer_box">
+                    <div class="purpose">
+                        <!-- Purpose -->
+                        <div class="form_row">
+                            <label for="purpose"> Purpose of Contact: </label>
+                        </div>
+                        <div class="form_input">
+                            <select id="purpose" name="purpose">
+                                <option value="Sell"> I want to sell book </option>
+                                <option value="Buy"> I want to buy book </option>
+                        </select>
+                        </div>
+                    </div>
+                    
+                    <div class="name">
+                        <!-- Name -->
+                        <div class="form_row">
+                            <label for="name"> Name: </label>
+                        </div>
+                        <div class="form_input">
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <!-- Email -->
+                        <div class="form_row">
+                            <label for="email"> Email: </label>
+                        </div>
+                        <div class="form_input">
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="phone">
+                        <!-- Phone -->
+                        <div class="form_row">
+                            <label for="phone"> Phone number: </label>
+                        </div>
+                        <div class="form_input">
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="method">
+                        <!-- Contact methods -->
+                        <div class="form_row">
+                            <label> How can we contact you? </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" id="contact_email" name="contact_method[]" value="email">
+                            <label for="contact_email"> By email </label>
+                            <br>
+                            <input type="checkbox" id="contact_phone" name="contact_method[]" value="phone">
+                            <label for="contact_phone"> By phone </label>
+                        </div>
+                    </div>
+
+                    <div class="newsletter">
+                        <!-- Newsletter -->
+                        <div class="form_row">
+                            <label> Do you want to receive our weekly newsletter? </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="radio" id="yes" name="newsletter" value="yes" checked>
+                            <label for="yes"> Yes </label>
+
+                            <input type="radio" id="no" name="newsletter" value="no">
+                            <label for="no"> No </label>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <!-- Note -->
+                        <div class="form-field">
+                        <textarea id="note" name="note" cols="30" rows="5" placeholder="Note"></textarea>
+                        </div>  
+                    </div>
+
+                    <div class="buttons">
+                        <!-- Buttons -->
+                        <div class="form-row">
+                            <input type="reset" value="   Clear   ">
+                            <input type="submit" value="   Submit   ">
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer_container">
+                <nav class="footer_navi">
+                    <a href="#">  About Us  </a>
+                    <a href="#">  Privacy Policy  </a>
+                    <a href="#">  Terms  </a>
+                    <a href="#">  Copyright  </a>
+                    <a href="contact.html">  Contact Us  </a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
